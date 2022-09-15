@@ -1,4 +1,4 @@
-﻿string [] CountingSymbolsInArrayString(string [] array)
+﻿int CountingSymbolsInArrayString(string [] array)
 {
     int count = 0;
     for (int i = 0; i < array.Length; i++)
@@ -8,8 +8,7 @@
             count++;
         }
     }
-    string [] arr = new string[count];
-    return arr;
+    return count;
 }
 
 string [] NewArrayStringLess3 (string [] array, string [] arr)
@@ -35,6 +34,7 @@ void PrintArray (string [] array)
 }
 
 string [] array = new string [4] {"hello", "2", "world", ":-)"};
-string [] arrayNew = CountingSymbolsInArrayString(array);
+int lengthArray = CountingSymbolsInArrayString(array);
+string [] arrayNew = new string [lengthArray];
 arrayNew = NewArrayStringLess3(array, arrayNew);
 PrintArray(arrayNew);
