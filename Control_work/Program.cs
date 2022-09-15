@@ -33,3 +33,8 @@ void PrintArray (string [] array)
         Console.Write($"{array[i]} ");
     }
 }
+
+string [] array = new string [4] {"hello", "2", "world", ":-)"};
+string [] arrayNew = CountingSymbolsInArrayString(array);
+arrayNew = NewArrayStringLess3(array, arrayNew);
+PrintArray(arrayNew);
